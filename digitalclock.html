@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+<body>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            margin: auto;
+            background: rgb(224, 230, 233);
+            height: 100px;
+            width: 80px;
+        }
+
+        .mainbox{
+            padding: 0;
+            margin: auto;
+            display: flex;
+            width: 300px;
+            height: 200px;
+            border: 3px ridge rgb(228, 168, 39);
+            background: rgb(67, 204, 204);
+            color: rgb(228, 168, 39);
+            text-shadow: black;
+        }
+    </style>
+    </head>
+    <div class="mainbox">
+        <div class="box" id="hh"></div>
+        <div class="box" id="mm"></div>
+        <div class="box" id="ss"></div>
+    </div>
+    
+    <SCript>
+
+       setInterval(()=>{
+    
+       
+        let hh = new Date().getHours()
+        let mm = new Date ().getMinutes()
+        let ss = new Date ().getSeconds()
+
+        document.getElementById('hh').innerHTML = hh
+        document.getElementById('mm').innerHTML = mm
+        document.getElementById('ss').innerHTML = ss
+
+    },1000)
+        </SCript>
+
+</body>
+</html>
