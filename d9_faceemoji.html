@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face emoji</title>
+</head>
+<body>
+    <img src="laughemoji.jpg" alt="" width="400px" height="500px"
+    onmouseover="laughemoji()" onmouseout="pokeremoji()">
+    <br>
+    <button onclick="laughemoji()">laugh emoji</button>
+    <button onclick="pokeremoji()">poker emoji</button>
+
+    <script>
+        function pokeremoji(){
+            document.querySelector("img").src = "pokeremoji.jpg"
+        }
+
+        function laughemoji(){
+            document.querySelector('img').src = "laughemoji.jpg"
+        }
+
+    </script>
+</body>
+</html>
